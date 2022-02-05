@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  
+   <Field ID="{324ae220-59e7-4766-aea1-2fc47df5e9c2}" 
+            Type="Choice" 
+            DisplayName="Leave Type" 
+            Required="TRUE" 
+            Format="Dropdown" 
+            Group="Leave"    
+            Name="paLeaveType" >
+          <CHOICES>
+            <CHOICE>Annual Leave</CHOICE>
+            <CHOICE>Personal Leave</CHOICE>
+            <CHOICE>Jury Duty</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field ID="{5898f624-d771-46ee-8923-36c229cae6e5}"  
+            Type="User" 
+            DisplayName="Manager" 
+            List="UserInfo" 
+            Required="TRUE"  
+            Group="Leave"   
+            Name="paManager" />
+        <Field Type="DateTime" 
+            DisplayName="Leave Start Date" 
+            Required="TRUE"   
+            Format="DateOnly" 
+            Group="Leave"  
+            ID="{eef1963a-e225-4417-9906-3aa4a6f2e3f2}"  
+            StaticName="paStartDate" 
+            Name="paStartDate" >
+        </Field>     
+<Field 
+            Name="paEndDate" 
+            FromBaseType="FALSE" 
+            Type="DateTime" 
+            DisplayName="Leave End Date" 
+            Required="FALSE"   
+            Format="DateOnly" 
+            Group="Leave" 
+            FriendlyDisplayFormat="Disabled" 
+            ID="{d36ee13b-2365-435a-b00d-e18909311f71}" 
+            StaticName="paEndDate"   >
+        </Field>
+        <Field Type="Text" 
+            DisplayName="Approval Id" 
+            Required="FALSE"   
+            MaxLength="255" 
+            Group="Leave" 
+            ID="{3dcdd74a-6af5-444e-8c6b-932e33a1800e}"  
+            StaticName="paApprovalId" 
+            Name="paApprovalId" >
+        </Field>
+        <Field Type="User" 
+            DisplayName="Leave Requestor" 
+            List="UserInfo" 
+            Required="FALSE"  
+            ShowField="ImnName" 
+            UserSelectionMode="PeopleOnly" 
+            UserSelectionScope="0" 
+            Group="Leave" 
+            ID="{4c380150-e4b5-43b8-ba8c-36cc15999d82}"  
+            StaticName="paLeaveRequestor" 
+            Name="paLeaveRequestor" />
+        <Field Type="URL" 
+            DisplayName="View Request" 
+            Required="FALSE"   
+            Format="Hyperlink" 
+            Group="Leave" 
+            ID="{5c9acf88-895e-44fc-9d0b-a802c5074a3c}"  
+            StaticName="paViewRequest" 
+            Name="paViewRequest" >
+        </Field>
+        <Field Type="Text" 
+            DisplayName="Running Status" 
+            Required="FALSE"   
+            MaxLength="255" 
+            Group="Leave" 
+            ID="{e5ba9d92-b44d-4fe7-8863-d4525ec01192}"  
+            StaticName="paRunningStatus" 
+            Name="paRunningStatus" >
+        </Field>
+        <Field Type="URL" 
+            DisplayName="View Flow" 
+            Required="FALSE"   
+            Format="Hyperlink" 
+            Group="Leave" 
+            ID="{15ae9897-f038-47d5-8934-2fd6f26cfacb}"  
+            StaticName="paViewFlow" 
+            Name="paViewFlow" >
+        </Field>
+        <Field Type="Note" 
+            DisplayName="Approvers Comments" 
+            Required="FALSE"   
+            NumLines="6" 
+            RichText="FALSE" 
+            Sortable="FALSE" 
+            Group="Leave" 
+            ID="{7442eb99-9339-418c-919f-ccb6b9cc2c8a}"  
+            StaticName="paComments" 
+            Name="paComments"   
+            RichTextMode="Compatible" 
+            IsolateStyles="FALSE" 
+            UnlimitedLengthInDocumentLibrary="FALSE"             
+            ShowInNewForm = "FALSE"            
+            >
+        </Field>
+        <Field Type="Choice" 
+            DisplayName="Approval Status" 
+            Required="FALSE"   
+            Format="RadioButtons" 
+            FillInChoice="FALSE" 
+            Group="Leave" 
+            ID="{4e8972a0-fdfc-4dde-8e32-1abac7764582}"  
+            StaticName="paStatus" 
+            Name="paStatus" 
+            ShowInNewForm = "FALSE"
+            >
+          <Default>Submit</Default>
+          <CHOICES>
+            <CHOICE>Submit</CHOICE>
+            <CHOICE>Cancel</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Type="Note" DisplayName="Message" Required="TRUE"   NumLines="10" RichText="FALSE" Group="Leave" ID="{431168b0-4e2c-4cd1-8bd3-6e0948ae4177}"  StaticName="paMessage" Name="paMessage" >
+        </Field>
+        <Field Type="URL" DisplayName="Approval Link" Required="FALSE"   Format="Hyperlink" Group="Leave" ID="{599146bc-5c0d-48cd-8f64-3a922cccfac4}"  StaticName="paApprovalLink" Name="paApprovalLink" >
+        </Field>
+     
+
+        <ContentType ID="0x01000F7619A4E17CA8438A80C7F36EA8DD95" Name="LeaveApproval" Description="" Group="Leave" >
+          <FieldRefs>
+            <FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="false"  />
+            <FieldRef ID="e5ba9d92-b44d-4fe7-8863-d4525ec01192" Name="paRunningStatus"  />
+            <FieldRef ID="4c380150-e4b5-43b8-ba8c-36cc15999d82" Name="paLeaveRequestor"  />
+            <FieldRef ID="5898f624-d771-46ee-8923-36c229cae6e5" Name="paManager" Required="true"  />
+            <FieldRef ID="4e8972a0-fdfc-4dde-8e32-1abac7764582" Name="paStatus"  />
+            <FieldRef ID="7442eb99-9339-418c-919f-ccb6b9cc2c8a" Name="paComments"  />
+            <FieldRef ID="15ae9897-f038-47d5-8934-2fd6f26cfacb" Name="paViewFlow"  />
+            <FieldRef ID="599146bc-5c0d-48cd-8f64-3a922cccfac4" Name="paApprovalLink"  />
+            <FieldRef ID="3dcdd74a-6af5-444e-8c6b-932e33a1800e" Name="paApprovalId"  />
+            <FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType"  />
+            <FieldRef ID="5c9acf88-895e-44fc-9d0b-a802c5074a3c" Name="paViewRequest"  />
+          </FieldRefs>
+        </ContentType>
+        <ContentType ID="0x0100D2FD5D34C35E6B43912CF63992DC1686" Name="LeaveRequest" Description="Leave Request" Group="Leave" >
+          <FieldRefs>
+            <FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title"  Required="false"/>
+            <FieldRef ID="431168b0-4e2c-4cd1-8bd3-6e0948ae4177" Name="paMessage" Required="true"  />
+            <FieldRef ID="324ae220-59e7-4766-aea1-2fc47df5e9c2" Name="paLeaveType" Required="true"  />
+            <FieldRef ID="eef1963a-e225-4417-9906-3aa4a6f2e3f2" Name="paStartDate" Required="true"  />
+            <FieldRef ID="d36ee13b-2365-435a-b00d-e18909311f71" Name="paEndDate"  />
+            <FieldRef ID="5898f624-d771-46ee-8923-36c229cae6e5" Name="paManager" Required="true"  />
+            <FieldRef ID="4e8972a0-fdfc-4dde-8e32-1abac7764582" Name="paStatus"  />
+            <FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType"  />
+            <FieldRef ID="7442eb99-9339-418c-919f-ccb6b9cc2c8a" Name="paComments"  />
+          </FieldRefs>
+        </ContentType>
+    
+  <ListInstance
+            CustomSchema="ApprovalHistorySchema.xml"            
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+            Title="Approval History"
+            Description="Approval History"
+            TemplateType="100" 
+            OnQuickLaunch="true" 
+            Url="Lists/ApprovalHistory">
+    </ListInstance>
+  <ListInstance
+            CustomSchema="LeaveRequestsSchema.xml" 
+            FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+            Title="Leave Requests"
+            Description="Leave Requests"
+            TemplateType="100" 
+            OnQuickLaunch="true" 
+            Url="Lists/LeaveRequests">
+    </ListInstance>
+
+</Elements>

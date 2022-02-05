@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "leave-request-client-side-solution",
+    "id": "11818663-5e79-4241-ae33-0197248ce5ae",
+    "version": "1.0.0.2",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Praveen Amaravadi",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.13.1"
+    },
+    "features": [{
+      "title": "leave-request-solution-package",
+      "description": "leave-request-solution-package",
+      "id": "63d56131-2856-4351-b1fb-a4861449c2ad",
+      "version": "1.0.0.2",
+      "assets": {
+        "elementManifests": ["elements.xml"],
+        "elementFiles": ["ApprovalHistorySchema.xml","LeaveRequestsSchema.xml"]
+      }
+
+    }]
+  },
+  "paths": {
+    "zippedPackage": "solution/leave-request.sppkg"
+  }
+}

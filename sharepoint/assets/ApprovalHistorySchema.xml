@@ -1,0 +1,37 @@
+<List xmlns:ows="Microsoft SharePoint" Title="Basic List" EnableContentTypes="TRUE" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Basic List" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType  Name="ApprovalHistory" ID="0x01000F7619A4E17CA8438A80C7F36EA8DD95" />
+    </ContentTypes>
+    <Fields></Fields>
+    <Views>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Toolbar Type="Standard" />
+        <ViewFields>
+         <FieldRef ID="e5ba9d92-b44d-4fe7-8863-d4525ec01192" Name="paRunningStatus" DisplayName="Running Status" />
+            <FieldRef ID="4c380150-e4b5-43b8-ba8c-36cc15999d82" Name="paLeaveRequestor" DisplayName="Leave Requestor" />
+            <FieldRef ID="5898f624-d771-46ee-8923-36c229cae6e5" Name="paManager" DisplayName="Manager" />
+            <FieldRef ID="4e8972a0-fdfc-4dde-8e32-1abac7764582" Name="paStatus" DisplayName="Approval Status" />
+            <FieldRef ID="7442eb99-9339-418c-919f-ccb6b9cc2c8a" Name="paComments" DisplayName="Approvers Comments" />
+            <FieldRef ID="15ae9897-f038-47d5-8934-2fd6f26cfacb" Name="paViewFlow" DisplayName="View Flow" />
+            <FieldRef ID="599146bc-5c0d-48cd-8f64-3a922cccfac4" Name="paApprovalLink" DisplayName="Approval Link" />
+            <FieldRef ID="3dcdd74a-6af5-444e-8c6b-932e33a1800e" Name="paApprovalId" DisplayName="Approval Id" />
+            <FieldRef ID="5c9acf88-895e-44fc-9d0b-a802c5074a3c" Name="paViewRequest" DisplayName="View Request" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" />
+          </OrderBy>
+        </Query>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
