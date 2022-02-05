@@ -11,5 +11,7 @@ Connect-PnPOnline -Url $siteCollectionUrl -Interactive
 Set-Location  $PSScriptRoot
 
 Get-PnPSite
-Get-PnPSiteTemplate -Schema LATEST  -Out SiteProvisioningTemplate.xml -Force 
+
+#cmd commented below on purpose to avoid accidental overwriting of the site
+#Invoke-PnPSiteTemplate -Schema LATEST  -Out SiteProvisioningTemplate.xml -Force 
 
