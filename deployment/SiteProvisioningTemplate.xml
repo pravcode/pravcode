@@ -1,0 +1,865 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2021/03/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-7087BF2F03FE4FBCAB98AF9C061A9B31">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-7087BF2F03FE4FBCAB98AF9C061A9B31" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/_api/GroupService/GetGroupImage?id='5d9672cf-6661-41ae-bb49-567d5a9014b0'&amp;hash=637796533921899218" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" />
+      <pnp:SiteSettings AllowDesigner="true" SearchBoxInNavBar="Inherit" SearchCenterUrl="" />
+      <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Monday" FirstWeekOfYear="0" LocaleId="3081" ShowWeeks="false" Time24="false" TimeZone="76" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
+      <pnp:PropertyBagEntries>
+        <pnp:PropertyBagEntry Key="UseFastCloneFromSiteMaster" Value="TRUE" Overwrite="false" />
+      </pnp:PropertyBagEntries>
+      <pnp:Security AssociatedOwnerGroup="{groupsitetitle} Owners" AssociatedMemberGroup="{groupsitetitle} Members" AssociatedVisitorGroup="{groupsitetitle} Visitors">
+        <pnp:AdditionalAdministrators>
+          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|dd6ef91f-d9f4-45d6-b6fc-d3e600a1bb40_o" />
+        </pnp:AdditionalAdministrators>
+        <pnp:AdditionalOwners>
+          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|dd6ef91f-d9f4-45d6-b6fc-d3e600a1bb40_o" />
+        </pnp:AdditionalOwners>
+        <pnp:AdditionalMembers>
+          <pnp:User Name="c:0o.c|federateddirectoryclaimprovider|dd6ef91f-d9f4-45d6-b6fc-d3e600a1bb40" />
+          <pnp:User Name="c:0-.f|rolemanager|spo-grid-all-users/d3fa03b8-e037-4590-bb70-d6957042ca9b" />
+        </pnp:AdditionalMembers>
+        <pnp:Permissions />
+      </pnp:Security>
+      <pnp:Navigation AddNewPagesToNavigation="true" CreateFriendlyUrlsForNewPages="true">
+        <pnp:GlobalNavigation NavigationType="Structural">
+          <pnp:StructuralNavigation RemoveExistingNodes="false" />
+        </pnp:GlobalNavigation>
+        <pnp:CurrentNavigation NavigationType="StructuralLocal">
+          <pnp:StructuralNavigation RemoveExistingNodes="false">
+            <pnp:NavigationNode Title="Home" Url="{site}" />
+            <pnp:NavigationNode Title="Conversations" Url="{site}/_layouts/15/groupstatus.aspx?Target=CONVERSATIONS&amp;Source=QuickLaunch" IsExternal="true" />
+            <pnp:NavigationNode Title="Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" />
+            <pnp:NavigationNode Title="Notebook" Url="{site}/_layouts/15/groupstatus.aspx?Target=NOTEBOOK" IsExternal="true" />
+            <pnp:NavigationNode Title="Pages" Url="{site}/SitePages/Forms/ByAuthor.aspx" />
+            <pnp:NavigationNode Title="Recent" Url="" IsExternal="true">
+              <pnp:NavigationNode Title="Leave Requests" Url="{site}/Lists/LeaveRequests/Leaves Calendar.aspx" />
+              <pnp:NavigationNode Title="Approval History" Url="{site}/Lists/ApprovalHistory/AllItems.aspx" />
+            </pnp:NavigationNode>
+            <pnp:NavigationNode Title="Site contents" Url="{site}/_layouts/15/viewlsts.aspx" IsExternal="true" />
+          </pnp:StructuralNavigation>
+        </pnp:CurrentNavigation>
+      </pnp:Navigation>
+      <pnp:SiteFields>
+        <Field Name="AppSupportedLocales" ID="{DC652701-23CB-44ee-BF83-9E740746CD4C}" Type="MultiChoice" DisplayName="Supported Locales" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="AppImageURL1" ID="{E44B4501-AF7D-4B30-A8A2-E70B59DAE7BF}" Type="URL" DisplayName="Image URL 1" Description="An image or screenshot for this app. Images should have a width of 512 pixels and a height of 384 pixels." Group="_Hidden" Sealed="TRUE" Format="Image" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="State" ID="{cbf25806-37e7-4f90-873e-98c0a506f455}" Type="Text" DisplayName="State" Group="_Hidden" Sealed="FALSE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="AppMetadataLocale" ID="{14C6CD06-7417-42C1-A051-89E455FD1090}" Type="Choice" DisplayName="Metadata Language" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" FillInChoice="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="ClientComponentDeveloperWebsiteUrl" ID="{2639FC06-3B49-4365-834B-149FD1955BD8}" Type="Text" DisplayName="Component Developer Website Url" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="AppImageURL3" ID="{873FD80B-3F9E-4ADA-88F4-3EE3C15522AC}" Type="URL" DisplayName="Image URL 3" Description="An image or screenshot for this app. Images should have a width of 512 pixels and a height of 384 pixels." Group="_Hidden" Sealed="TRUE" Format="Image" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="AppVersion" ID="{8416FF0B-F1AB-49FC-A7EF-A744F871F058}" Type="Text" DisplayName="App version" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE">
+          <Default>1.0.0.0</Default>
+        </Field>
+        <Field Name="ClientComponentDeveloperName" ID="{5DC8760E-C00E-4E80-AE4C-757906C24712}" Type="Text" DisplayName="Component Developer Name" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field ID="{9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2}" Name="_SPCallToAction" StaticName="_SPCallToAction" DisplayName="Call To Action" Type="Note" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Description="" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" />
+        <Field Name="AadServicePrincipalId" ID="{32434713-0003-4ACC-9976-9EAD1309888B}" Type="Text" DisplayName="Azure AD Service Principal Id" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="IsClientSideSolution" ID="{2B6EEA14-803B-47D2-959F-4947BF4E978C}" Type="Boolean" DisplayName="Client-side solution" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="IsProviderHostedClientSideSolution" ID="{886b911a-e83c-4a3b-8931-25c832bacac6}" Type="Boolean" DisplayName="$Resources:core,Client_Component_IsProviderHostedClientSideSolution;" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="AppImageURL2" ID="{047D5B20-5E82-4EA1-9841-F62C9656C41A}" Type="URL" DisplayName="Image URL 2" Description="An image or screenshot for this app. Images should have a width of 512 pixels and a height of 384 pixels." Group="_Hidden" Sealed="TRUE" Format="Image" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field ID="{324ae220-59e7-4766-aea1-2fc47df5e9c2}" Type="Choice" DisplayName="Leave Type" Required="TRUE" Format="Dropdown" Group="Leave" Name="paLeaveType" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}" StaticName="paLeaveType">
+          <CHOICES>
+            <CHOICE>Annual Leave</CHOICE>
+            <CHOICE>Personal Leave</CHOICE>
+            <CHOICE>Jury Duty</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Name="AppImageURL4" ID="{307ECF23-25D5-4D1D-89F5-693EB977D6F5}" Type="URL" DisplayName="Image URL 4" Description="An image or screenshot for this app. Images should have a width of 512 pixels and a height of 384 pixels." Group="_Hidden" Sealed="TRUE" Format="Image" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="AppImageURL5" ID="{1FC17524-AFA8-4E6F-BA64-A77DD42F310B}" Type="URL" DisplayName="Image URL 5" Description="An image or screenshot for this app. Images should have a width of 512 pixels and a height of 384 pixels." Group="_Hidden" Sealed="TRUE" Format="Image" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field ID="{5898f624-d771-46ee-8923-36c229cae6e5}" Type="User" DisplayName="Manager" List="UserInfo" Required="TRUE" Group="Leave" Name="paManager" SourceID="{{siteid}}" StaticName="paManager" />
+        <Field Name="TenantWideExtensionSequence" ID="{89AA6026-7B00-4D24-8B4A-7C7DE7880373}" Type="Integer" DisplayName="Sequence" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="ClientComponentDeveloperPrivacyUrl" ID="{D2C76127-BE32-47ED-A153-A45F55E74C99}" Type="Text" DisplayName="Component Developer Privacy Url" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="IsolatedDomain" ID="{68021728-C04C-45BB-B51F-7BCB5AB997B1}" Type="Text" DisplayName="Isolated Domain" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="ReturnIfCustomScriptDisabled" ID="{274A482A-AC49-4DB7-BBB5-8BFBDD27B45B}" Type="Boolean" Group="_Hidden" Sealed="TRUE" DisplayName="Return if Custom Script Disabled" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="FALSE" ShowInNewForm="TRUE" />
+        <Field Name="SolutionVersion" ID="{F92C6A2A-1749-428E-B7DA-3E44C3BEAA8F}" Type="Text" DisplayName="Solution Version" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="TenantWideExtensionComponentId" ID="{A146D12A-1902-41A9-920A-155738EFF298}" Type="Text" DisplayName="Component Id" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="SolutionId" ID="{FD34CA2F-4E81-40FA-B16F-4C455235DA19}" Type="Text" DisplayName="Solution Id" Group="_Hidden" Indexed="TRUE" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="SolutionName" ID="{F3D82830-DF08-4612-B895-61198F55C723}" Type="Text" DisplayName="Solution Name" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="AppThumbnailURL" ID="{22FA2E37-2293-4E0B-90E9-FA00CCBD85B6}" Type="URL" DisplayName="Icon" Description="The URL to the app icon. The icon should have a width and height of 96 pixels." Group="_Hidden" Sealed="FALSE" Format="Image" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="FeatureName" ID="{95668939-6451-4AE1-91FA-C5923F9E0BE7}" Type="Text" DisplayName="Feature Name" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="AadApplicationId" ID="{33BDA339-EFE6-4A1B-ACC8-6C79A1DBAE98}" Type="Text" DisplayName="Azure AD ApplicationId" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="TenantWideExtensionLocation" ID="{6B75393A-F755-4290-BFDA-702AD4FDEAC3}" Type="Text" DisplayName="Location" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Type="DateTime" DisplayName="Leave Start Date" Required="TRUE" Format="DateOnly" Group="Leave" ID="{eef1963a-e225-4417-9906-3aa4a6f2e3f2}" StaticName="paStartDate" Name="paStartDate" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+        </Field>
+        <Field Name="ComponentSupportsFullPage" ID="{CBC0003B-9D7E-4C33-BEA9-A37EFFDB7FB1}" Type="Boolean" DisplayName="Supports Full Page" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" />
+        <Field Name="paEndDate" FromBaseType="FALSE" Type="DateTime" DisplayName="Leave End Date" Required="FALSE" Format="DateOnly" Group="Leave" FriendlyDisplayFormat="Disabled" ID="{d36ee13b-2365-435a-b00d-e18909311f71}" StaticName="paEndDate" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+        </Field>
+        <Field Name="IsClientSideSolutionCurrentVersionDeployed" ID="{96CCF93B-0EB3-4A81-B579-5F1BAD70DBCB}" Type="Boolean" DisplayName="Current Version Deployed" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE">
+          <Default>0</Default>
+        </Field>
+        <Field Name="AppProductID" ID="{031CD33C-6486-4B08-AF1B-8D2B05EB3854}" Type="Guid" DisplayName="Product ID" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" Indexed="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" />
+        <Field Name="AppDescription" ID="{5B90EE3E-12A0-44C7-86C6-D8FBC461777D}" Type="Note" DisplayName="Description" Group="_Hidden" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="AppSubtype" ID="{DE81F63E-C919-4F47-80FB-95EF0EF506F7}" Type="Computed" DisplayName="App Subtype" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE">
+          <FieldRefs>
+            <FieldRef ID="{E026628D-A28F-4AD3-B34B-A95B3B009CCB}" Name="AppSubtypeID" />
+          </FieldRefs>
+          <DisplayPattern>
+            <Switch>
+              <Expr>
+                <Column Name="AppSubtypeID" />
+              </Expr>
+              <Case Value="16">
+                <HTML>SharePoint App</HTML>
+              </Case>
+              <Case Value="2">
+                <HTML>App for Office</HTML>
+              </Case>
+              <Default>
+                <HTML>Unknown App Subtype</HTML>
+              </Default>
+            </Switch>
+          </DisplayPattern>
+        </Field>
+        <Field Name="IsFeaturedApp" ID="{B9D82342-9580-4BA1-9742-174CFCCBC77F}" Type="Boolean" DisplayName="Featured" Description="This app should appear in the &quot;noteworthy&quot; section." Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" Indexed="TRUE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="AadApplicationAppId" ID="{23410D43-D091-46AA-A459-73C200FA2E26}" Type="Text" DisplayName="Azure AD Application AppId" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="AppSupportURL" ID="{CD5E6C48-2138-4BF7-BFC3-4E5E9ECE7E1C}" Type="URL" DisplayName="Support URL" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="ComponentSupportsTeamsTab" ID="{F689D549-103C-499C-96ED-709615986111}" Type="Boolean" DisplayName="Supports Teams Tabs" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" />
+        <Field ID="{cb19284a-cde7-4570-a980-1dab8bd74470}" Name="_ExtendedDescription" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_ExtendedDescription" DisplayName="Description" Group="Extended Columns" RichText="TRUE" ShowInEditForm="FALSE" RichTextMode="Compatible" CanToggleHidden="TRUE" Type="Note" />
+        <Field Type="Text" DisplayName="Approval Id" Required="FALSE" MaxLength="255" Group="Leave" ID="{3dcdd74a-6af5-444e-8c6b-932e33a1800e}" StaticName="paApprovalId" Name="paApprovalId" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+        </Field>
+        <Field Type="User" DisplayName="Leave Requestor" List="UserInfo" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Group="Leave" ID="{4c380150-e4b5-43b8-ba8c-36cc15999d82}" StaticName="paLeaveRequestor" Name="paLeaveRequestor" SourceID="{{siteid}}" />
+        <Field Name="ClientComponentSkipFeatureDeployment" ID="{CD58F851-9090-49ED-A54E-FE488F662D4A}" Type="Boolean" Group="_Hidden" Sealed="TRUE" DisplayName="Skip Feature Deployment" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="FALSE" ShowInNewForm="TRUE" />
+        <Field Name="AppPublisher" ID="{B1402C55-9750-4346-B6C3-120B2DA47B73}" Type="Text" DisplayName="Publisher" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="AppShortDescription" ID="{CF57B756-A2B6-43BD-ACE3-6FD4D8AD90F8}" Type="Text" DisplayName="Short Description" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="ClientComponentManifest" ID="{F755DD56-4435-4F64-B4C5-DF939A12540D}" Type="Note" DisplayName="Component Manifest" Group="_Hidden" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="ContainsTenantWideExtension" ID="{84316157-4F2B-42C4-B353-B593B357DE01}" Type="Boolean" Group="_Hidden" Sealed="TRUE" DisplayName="Contains tenant wide instances" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="PackageDefaultSkipFeatureDeployment" ID="{A39BC357-357E-403A-8146-289F121B9040}" Type="Boolean" Group="_Hidden" Sealed="TRUE" DisplayName="Package Default Skip Feature Deployment" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field ID="{AC9CE95B-F081-4B8A-BB19-2F4427D44674}" Name="_ExpirationDate" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_ExpirationDate" Hidden="TRUE" Group="_Hidden" ReadOnly="TRUE" Type="Lookup" List="Docs" ShowField="ExpirationDate" DisplayName="Expiration Date" FromBaseType="TRUE" DisplaceOnUpgrade="TRUE" FieldRef="ID" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" />
+        <Field Name="TenantWideExtensionDisabled" ID="{41494365-37F4-4A7D-B197-D54650FA0F1D}" Type="Boolean" Group="_Hidden" Sealed="TRUE" DisplayName="Disabled" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field ID="{08D89A66-4634-42B8-9D5A-0C27395A48B3}" Name="TriggerFlowInfo" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" ShowInFileDlg="FALSE" Hidden="TRUE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ReadOnlyEnforced="FALSE" ReadOnly="TRUE" DisplaceOnUpgrade="TRUE" StaticName="TriggerFlowInfo" Type="Text" DisplayName="Trigger Flow Info" Sortable="FALSE" />
+        <Field Name="SupportsTeamsTabs" ID="{12592a6a-af80-430a-baea-657bdcec791d}" Type="Boolean" DisplayName="Supports Teams Tabs" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="FeatureId" ID="{B53F4070-967C-4DB3-98DF-3CC990E80C5E}" Type="Text" DisplayName="Feature Id" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="IsolatedDomain" ID="{93C24D72-351F-4711-83F1-023783753740}" Type="Text" DisplayName="Isolated Domain" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="IsClientSideSolutionDeployed" ID="{B2FB0F79-CB89-4A24-A048-561D4B3505F7}" Type="Boolean" DisplayName="Deployed" Group="_Hidden" Hidden="FALSE" Sealed="FALSE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE">
+          <Default>0</Default>
+        </Field>
+        <Field Name="ClientComponentDeveloperTermsOfUseUrl" ID="{124A6F7F-99F7-4FFC-B00E-27C7E7EB121F}" Type="Text" DisplayName="Component Developer Terms of Use Url" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="TenantWideExtensionComponentProperties" ID="{EF74E985-EBF0-4C48-B722-28EC6266FFA4}" Type="Note" DisplayName="Component Properties" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="FeatureDescription" ID="{C43F8F87-1EBC-4C97-B222-B33884E93053}" Type="Text" DisplayName="Feature Description" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Type="URL" DisplayName="View Request" Required="FALSE" Format="Hyperlink" Group="Leave" ID="{5c9acf88-895e-44fc-9d0b-a802c5074a3c}" StaticName="paViewRequest" Name="paViewRequest" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+        </Field>
+        <Field Name="TenantWideExtensionHostProperties" ID="{4740858A-940A-48DA-8553-2E10FEC5A056}" Type="Note" DisplayName="Host Properties" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field ID="{ff41708b-e251-4237-a060-bea44657e8dc}" Name="_SPAssetFolderId" StaticName="_SPAssetFolderId" DisplayName="Asset Folder Id" Type="Number" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Description="" ReadOnly="TRUE" AllowDeletion="FALSE" Hidden="TRUE" />
+        <Field Name="AppSubtypeID" ID="{E026628D-A28F-4AD3-B34B-A95B3B009CCB}" Type="Integer" DisplayName="App Subtype ID" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="TRUE" Indexed="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE">
+          <Default>1</Default>
+        </Field>
+        <Field Name="IsValidAppPackage" ID="{01DF698E-7495-428C-A04F-99C8EDA6B3CD}" Type="Boolean" DisplayName="Valid app package" Group="_Hidden" Sealed="FALSE" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE">
+          <Default>1</Default>
+        </Field>
+        <Field Name="IsAppPackageEnabled" ID="{0985248F-8044-4C6F-B535-EB3AC2773D44}" Type="Boolean" Group="_Hidden" Sealed="TRUE" DisplayName="Enabled" Description="End users should see this app as an option to add to sites." ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE">
+          <Default>1</Default>
+        </Field>
+        <Field Name="AppPrerequisitesXML" ID="{83CAD291-C898-4D17-9208-D6786FC17145}" Type="Note" DisplayName="Prerequisites" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Type="Text" DisplayName="Running Status" Required="FALSE" MaxLength="255" Group="Leave" ID="{e5ba9d92-b44d-4fe7-8863-d4525ec01192}" StaticName="paRunningStatus" Name="paRunningStatus" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+        </Field>
+        <Field Name="AadApplicationAppId" ID="{D3FA9F96-DABF-413E-95B9-F8ECDF4DB794}" Type="Text" DisplayName="Azure AD Application AppId" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="ContainsTeamsManifest" ID="{4618BC96-56D1-49E1-8385-4E9BE7B4D604}" Type="Boolean" DisplayName="Contains Teams Manifest" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Type="URL" DisplayName="View Flow" Required="FALSE" Format="Hyperlink" Group="Leave" ID="{15ae9897-f038-47d5-8934-2fd6f26cfacb}" StaticName="paViewFlow" Name="paViewFlow" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+        </Field>
+        <Field Name="ClientComponentDeveloperMpnId" ID="{28E60C99-8BF9-450D-B5AA-125953A4D4F1}" Type="Text" DisplayName="Component Developer Mpn Id" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Type="Note" DisplayName="Approvers Comments" Required="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" Group="Leave" ID="{7442eb99-9339-418c-919f-ccb6b9cc2c8a}" StaticName="paComments" Name="paComments" RichTextMode="Compatible" IsolateStyles="FALSE" UnlimitedLengthInDocumentLibrary="FALSE" ShowInNewForm="FALSE" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+        </Field>
+        <Field Name="ContainsVivaManifest" ID="{bf222d9b-8e25-4b89-8611-43c96bb550d3}" Type="Text" DisplayName="Contains Viva Manifest" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="WebApiPermissionScopesNote" ID="{5D88909C-873A-4262-BC81-9B7C2AD04105}" Type="Note" Group="_Hidden" Sealed="TRUE" DisplayName="Web Api Permission Scopes Requested" ReadOnly="True" ShowInEditForm="FALSE" ShowInDisplayForm="True" ShowInNewForm="FALSE" />
+        <Field Name="FeatureScope" ID="{717F079D-2F2E-45AF-A59C-6A7A9E817897}" Type="Integer" DisplayName="Feature Scope" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="ClientComponentName" ID="{D2C5909D-D4B5-46B1-ADEE-13D4BC7394C9}" Type="Text" DisplayName="Component Name" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="SharePointAppCategory" ID="{7CBABA9F-D082-4E55-96B9-62CA9A541769}" Type="Choice" FillInChoice="TRUE" DisplayName="Category" Group="_Hidden" AllowDeletion="FALSE" ReadOnly="FALSE" Indexed="TRUE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Type="Choice" DisplayName="Approval Status" Required="FALSE" Format="RadioButtons" FillInChoice="FALSE" Group="Leave" ID="{4e8972a0-fdfc-4dde-8e32-1abac7764582}" StaticName="paStatus" Name="paStatus" ShowInNewForm="FALSE" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+          <Default>Submit</Default>
+          <CHOICES>
+            <CHOICE>Submit</CHOICE>
+            <CHOICE>Cancel</CHOICE>
+          </CHOICES>
+        </Field>
+        <Field Name="AvailableFor" ID="{cc1abca4-3a7a-4191-a633-16146d2d4d09}" Type="Text" DisplayName="Available for" Group="_Hidden" Sealed="FALSE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="IsDefaultAppMetadataLocale" ID="{2E055CAD-648E-4723-AA3A-917DD9E809B3}" Type="Boolean" DisplayName="Default Metadata Language" JSLink="AppCatalogFieldTemplate.js" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE">
+          <Default>1</Default>
+        </Field>
+        <Field Type="Note" DisplayName="Message" Required="TRUE" NumLines="10" RichText="FALSE" Group="Leave" ID="{431168b0-4e2c-4cd1-8bd3-6e0948ae4177}" StaticName="paMessage" Name="paMessage" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+        </Field>
+        <Field Name="AadServicePrincipalId" ID="{974BFAB2-86D1-455D-B60E-09D3EFE81E92}" Type="Text" DisplayName="Azure AD Service Principal Id" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="WebApiPermissionRequests" ID="{F8A04DB8-4B6E-4613-9232-02811628A7F6}" Type="Boolean" DisplayName="WebApiPermissionRequests" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="TenantWideExtensionWebTemplate" ID="{8B97C8BA-E0C8-4C35-9B65-EFEE64F1B610}" Type="Text" DisplayName="Web Template" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Type="URL" DisplayName="Approval Link" Required="FALSE" Format="Hyperlink" Group="Leave" ID="{599146bc-5c0d-48cd-8f64-3a922cccfac4}" StaticName="paApprovalLink" Name="paApprovalLink" SourceID="{b8599b7e-f429-4ace-a478-af57bb4c1cfc}">
+        </Field>
+        <Field Name="StoreAssetId" ID="{3AA8EFC0-1A31-42BC-9755-865F1A22A3F5}" Type="Text" DisplayName="Store ID" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" Indexed="TRUE" />
+        <Field Name="Source" ID="{cce7fec4-b405-4794-be65-17f5164a66f1}" Type="Text" DisplayName="App type" Group="_Hidden" Sealed="FALSE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="AppPermissionXML" ID="{BAD900C5-34C6-4D4B-B84A-698B5DA331FE}" Type="Note" DisplayName="App Permission Requests" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="AppPackageErrorMessage" ID="{80AC5BC8-73DC-4967-950F-3F6EC32C19F4}" Type="Note" DisplayName="App package error message" Group="_Hidden" Sealed="FALSE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" />
+        <Field Name="SkipFeatureDeployment" ID="{EDA244C9-5A10-4057-8B96-A118A3B31454}" Type="Boolean" Group="_Hidden" Sealed="FALSE" DisplayName="Added to all sites" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" />
+        <Field Name="AppPackageHash" ID="{0A95EBCF-B06D-479C-8196-C5783C96F751}" Type="Text" DisplayName="Package Hash" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="UniqueSolutionId" ID="{55C702D1-FD66-4D3D-9E78-A0D70BAB963A}" Type="Text" DisplayName="Unique Client Side Solution Id" Indexed="TRUE" EnforceUniqueValues="TRUE" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="Disabled" ID="{051ADCD1-34E2-48CA-A10D-973BA0C58227}" Type="Boolean" Group="_Hidden" Sealed="TRUE" DisplayName="Disabled" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="IsAutoHostedApp" ID="{5a7ad4d7-13d0-48e6-864f-ad693b491788}" Type="Boolean" DisplayName="Autohosted App" Group="_Hidden" Sealed="TRUE" Hidden="TRUE" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE">
+          <Default>0</Default>
+        </Field>
+        <Field Name="ComponentSupportsWebPart" ID="{C8F457E4-A928-45A0-9FDA-496BDF220DC2}" Type="Boolean" DisplayName="Supports WebPart" Group="_Hidden" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" />
+        <Field Name="ClientComponentType" ID="{1B9BECE7-97B2-4A80-8282-E059FD8B73AE}" Type="Text" DisplayName="Component Type" Group="_Hidden" Indexed="TRUE" Hidden="TRUE" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" />
+        <Field Name="AppTitleInfo" ID="{D1807CED-4FAE-49AB-8307-9EC769C8D838}" Type="Note" DisplayName="App Title Info" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="TenantWideExtensionListTemplate" ID="{8AE577F5-25A2-4122-8705-3460142B2069}" Type="Integer" DisplayName="List Template" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field Name="PreviouslySetClientComponentSkipFeatureDeployment" ID="{D3CD6DF8-CC3B-4DFF-BE20-8FF488A52955}" Type="Boolean" Group="_Hidden" Sealed="TRUE" DisplayName="Previously set Skip Feature Deployment" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field Name="ExternalContentDomains" ID="{D1897CF8-37A7-486B-98B3-323672559684}" Type="Note" DisplayName="External Content Domains" Group="_Hidden" Hidden="FALSE" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" />
+        <Field Name="AadApplicationId" ID="{CC24A8F8-6B2E-40F7-B06D-6D5697E1CB58}" Type="Text" DisplayName="Azure AD ApplicationId" Group="_Hidden" Hidden="TRUE" Sealed="TRUE" ReadOnly="TRUE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInNewForm="FALSE" />
+        <Field ID="{3A8EE3F8-166B-4394-B3E2-E98DCF86A847}" Name="A2ODMountCount" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="A2ODMountCount" Hidden="TRUE" Group="_Hidden" ReadOnly="TRUE" Type="Lookup" List="Docs" ShowField="A2ODMountCount" DisplayName="A2OD Mount Count" FromBaseType="TRUE" DisplaceOnUpgrade="TRUE" FieldRef="ID" JoinColName="DoclibRowId" JoinRowOrdinal="0" JoinType="INNER" />
+        <Field Name="AppVideoURL" ID="{831A8EFD-9456-43FA-B584-1CBDD4292519}" Type="URL" DisplayName="Video URL" Description="A URL to a video file or web page with an embedded video" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+        <Field ID="{1C640FFF-CEDA-4798-BF7A-096D3B1B823E}" Name="ClientComponentId" Group="_Hidden" Indexed="TRUE" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInViewForms="TRUE" ShowInNewForm="FALSE" Type="Guid" DisplayName="Component Id" />
+        <Field Name="AssetID" ID="{D3321FFF-46F3-407d-89EF-FFF1E075A018}" Type="Text" DisplayName="Asset ID" Group="_Hidden" Sealed="TRUE" ReadOnly="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" />
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x01000F7619A4E17CA8438A80C7F36EA8DD95" Name="LeaveApproval" Description="" Group="Leave" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="e5ba9d92-b44d-4fe7-8863-d4525ec01192" Name="paRunningStatus" UpdateChildren="true" />
+            <pnp:FieldRef ID="4c380150-e4b5-43b8-ba8c-36cc15999d82" Name="paLeaveRequestor" UpdateChildren="true" />
+            <pnp:FieldRef ID="5898f624-d771-46ee-8923-36c229cae6e5" Name="paManager" UpdateChildren="true" />
+            <pnp:FieldRef ID="4e8972a0-fdfc-4dde-8e32-1abac7764582" Name="paStatus" UpdateChildren="true" />
+            <pnp:FieldRef ID="7442eb99-9339-418c-919f-ccb6b9cc2c8a" Name="paComments" UpdateChildren="true" />
+            <pnp:FieldRef ID="15ae9897-f038-47d5-8934-2fd6f26cfacb" Name="paViewFlow" UpdateChildren="true" />
+            <pnp:FieldRef ID="599146bc-5c0d-48cd-8f64-3a922cccfac4" Name="paApprovalLink" UpdateChildren="true" />
+            <pnp:FieldRef ID="3dcdd74a-6af5-444e-8c6b-932e33a1800e" Name="paApprovalId" UpdateChildren="true" />
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5c9acf88-895e-44fc-9d0b-a802c5074a3c" Name="paViewRequest" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+        <pnp:ContentType ID="0x0100D2FD5D34C35E6B43912CF63992DC1686" Name="LeaveRequest" Description="Leave Request" Group="Leave" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="431168b0-4e2c-4cd1-8bd3-6e0948ae4177" Name="paMessage" UpdateChildren="true" />
+            <pnp:FieldRef ID="324ae220-59e7-4766-aea1-2fc47df5e9c2" Name="paLeaveType" UpdateChildren="true" />
+            <pnp:FieldRef ID="eef1963a-e225-4417-9906-3aa4a6f2e3f2" Name="paStartDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="d36ee13b-2365-435a-b00d-e18909311f71" Name="paEndDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="5898f624-d771-46ee-8923-36c229cae6e5" Name="paManager" UpdateChildren="true" />
+            <pnp:FieldRef ID="4e8972a0-fdfc-4dde-8e32-1abac7764582" Name="paStatus" UpdateChildren="true" />
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="7442eb99-9339-418c-919f-ccb6b9cc2c8a" Name="paComments" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Approval History" Description="Approval History" DocumentTemplate="" TemplateType="100" Url="Lists/ApprovalHistory" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/ApprovalHistory/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/ApprovalHistory/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/ApprovalHistory/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01000F7619A4E17CA8438A80C7F36EA8DD95" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{82F3D49A-C8B7-4550-995A-262247944E32}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/ApprovalHistory/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef ID="4c380150-e4b5-43b8-ba8c-36cc15999d82" Name="paLeaveRequestor" DisplayName="Leave Requestor" />
+                <FieldRef ID="e5ba9d92-b44d-4fe7-8863-d4525ec01192" Name="paRunningStatus" DisplayName="Running Status" />
+                <FieldRef ID="5898f624-d771-46ee-8923-36c229cae6e5" Name="paManager" DisplayName="Manager" />
+                <FieldRef ID="599146bc-5c0d-48cd-8f64-3a922cccfac4" Name="paApprovalLink" DisplayName="Approval Link" />
+                <FieldRef ID="5c9acf88-895e-44fc-9d0b-a802c5074a3c" Name="paViewRequest" DisplayName="View Request" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{EFABCC5E-540F-4877-A238-2E06F48DE0AD}" Type="HTML" DisplayName="Awaiting My Approval" Url="{site}/Lists/ApprovalHistory/Awaiting My Approval.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+                <Where>
+                  <And>
+                    <Eq>
+                      <FieldRef Name="paManager" />
+                      <Value Type="User">
+                        <UserID />
+                      </Value>
+                    </Eq>
+                    <Eq>
+                      <FieldRef Name="paRunningStatus" />
+                      <Value Type="Text">Started</Value>
+                    </Eq>
+                  </And>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="paLeaveRequestor" />
+                <FieldRef Name="paRunningStatus" />
+                <FieldRef Name="paApprovalLink" />
+                <FieldRef Name="paViewRequest" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="URL" DisplayName="Approval Link" Required="FALSE" Format="Hyperlink" Group="Leave" ID="{599146bc-5c0d-48cd-8f64-3a922cccfac4}" StaticName="paApprovalLink" Name="paApprovalLink" SourceID="{{siteid}}" Customization="" ColName="nvarchar8" RowOrdinal="0" ColName2="nvarchar9" RowOrdinal2="0" CustomFormatter="{&quot;$schema&quot;:&quot;https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json&quot;,&quot;elmType&quot;:&quot;a&quot;,&quot;txtContent&quot;:&quot;Open Approval task&quot;,&quot;attributes&quot;:{&quot;target&quot;:&quot;_blank&quot;,&quot;href&quot;:&quot;=@currentField&quot;}}" Version="1" />
+            <Field Type="URL" DisplayName="View Request" Required="FALSE" Format="Hyperlink" Group="Leave" ID="{5c9acf88-895e-44fc-9d0b-a802c5074a3c}" StaticName="paViewRequest" Name="paViewRequest" SourceID="{{siteid}}" Customization="" ColName="nvarchar11" RowOrdinal="0" ColName2="nvarchar12" RowOrdinal2="0" CustomFormatter="{&quot;$schema&quot;:&quot;https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json&quot;,&quot;elmType&quot;:&quot;a&quot;,&quot;txtContent&quot;:&quot;View Request&quot;,&quot;attributes&quot;:{&quot;target&quot;:&quot;_blank&quot;,&quot;href&quot;:&quot;=@currentField&quot;}}" Version="2" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="e5ba9d92-b44d-4fe7-8863-d4525ec01192" Name="paRunningStatus" DisplayName="Running Status" />
+            <pnp:FieldRef ID="4c380150-e4b5-43b8-ba8c-36cc15999d82" Name="paLeaveRequestor" DisplayName="Leave Requestor" />
+            <pnp:FieldRef ID="5898f624-d771-46ee-8923-36c229cae6e5" Name="paManager" DisplayName="Manager" />
+            <pnp:FieldRef ID="4e8972a0-fdfc-4dde-8e32-1abac7764582" Name="paStatus" DisplayName="Approval Status" />
+            <pnp:FieldRef ID="7442eb99-9339-418c-919f-ccb6b9cc2c8a" Name="paComments" DisplayName="Approvers Comments" />
+            <pnp:FieldRef ID="15ae9897-f038-47d5-8934-2fd6f26cfacb" Name="paViewFlow" DisplayName="View Flow" />
+            <pnp:FieldRef ID="3dcdd74a-6af5-444e-8c6b-932e33a1800e" Name="paApprovalId" DisplayName="Approval Id" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Apps for SharePoint" Description="A catalog to store apps for SharePoint" DocumentTemplate="" TemplateType="336" Url="AppCatalog" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="88dc6e04-3256-401b-9851-8e07674bb0d6" EnableAttachments="false" ListExperience="ClassicExperience" DefaultDisplayFormUrl="{site}/AppCatalog/DispForm.aspx" DefaultEditFormUrl="{site}/AppCatalog/EditForm.aspx" DefaultNewFormUrl="{site}/AppCatalog/Upload.aspx" ImageUrl="/_layouts/15/images/itappcatalog.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{9B82AAEE-D213-4C64-AB1A-6A78335672C5}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Apps" Url="{site}/AppCatalog/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE" GroupLimit="30">
+                  <FieldRef Name="AppProductID" />
+                </GroupBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="AppVersion" />
+                <FieldRef Name="Edit" />
+                <FieldRef Name="AppProductID" />
+                <FieldRef Name="AppMetadataLocale" />
+                <FieldRef Name="IsDefaultAppMetadataLocale" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="IsAppPackageEnabled" />
+                <FieldRef Name="IsValidAppPackage" />
+                <FieldRef Name="IsClientSideSolutionDeployed" />
+                <FieldRef Name="SkipFeatureDeployment" />
+                <FieldRef Name="AppPackageErrorMessage" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{C7D4F587-2AE7-483D-9B32-A71AA36C9F68}" MobileView="TRUE" Type="HTML" Scope="Recursive" DisplayName="Featured Apps" Url="{site}/AppCatalog/Forms/FeaturedContent.aspx" Level="1" BaseViewID="10" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="IsFeaturedApp" />
+                    <Value Type="Boolean">1</Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="AppVersion" />
+                <FieldRef Name="Edit" />
+                <FieldRef Name="AppProductID" />
+                <FieldRef Name="AppMetadataLocale" />
+                <FieldRef Name="IsDefaultAppMetadataLocale" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="IsAppPackageEnabled" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{6B928EBF-08D2-4A38-A3A4-17C5E1C9B6F8}" MobileView="TRUE" Type="HTML" Scope="Recursive" DisplayName="Unavailable Apps" Url="{site}/AppCatalog/Forms/DisabledContent.aspx" Level="1" BaseViewID="11" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <Where>
+                  <Or>
+                    <Eq>
+                      <FieldRef Name="IsValidAppPackage" />
+                      <Value Type="Boolean">0</Value>
+                    </Eq>
+                    <Eq>
+                      <FieldRef Name="IsAppPackageEnabled" />
+                      <Value Type="Boolean">0</Value>
+                    </Eq>
+                  </Or>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="AppVersion" />
+                <FieldRef Name="Edit" />
+                <FieldRef Name="AppProductID" />
+                <FieldRef Name="AppMetadataLocale" />
+                <FieldRef Name="IsDefaultAppMetadataLocale" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="IsAppPackageEnabled" />
+                <FieldRef Name="IsValidAppPackage" />
+                <FieldRef Name="AppPackageErrorMessage" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="031cd33c-6486-4b08-af1b-8d2b05eb3854" Name="AppProductID" DisplayName="Product ID" />
+            <pnp:FieldRef ID="d3321fff-46f3-407d-89ef-fff1e075a018" Name="AssetID" DisplayName="Asset ID" />
+            <pnp:FieldRef ID="b1402c55-9750-4346-b6c3-120b2da47b73" Name="AppPublisher" DisplayName="Publisher" />
+            <pnp:FieldRef ID="22fa2e37-2293-4e0b-90e9-fa00ccbd85b6" Name="AppThumbnailURL" DisplayName="Icon" />
+            <pnp:FieldRef ID="5b90ee3e-12a0-44c7-86c6-d8fbc461777d" Name="AppDescription" DisplayName="Description" />
+            <pnp:FieldRef ID="cf57b756-a2b6-43bd-ace3-6fd4d8ad90f8" Name="AppShortDescription" DisplayName="Short Description" />
+            <pnp:FieldRef ID="8416ff0b-f1ab-49fc-a7ef-a744f871f058" Name="AppVersion" DisplayName="App version" />
+            <pnp:FieldRef ID="cd5e6c48-2138-4bf7-bfc3-4e5e9ece7e1c" Name="AppSupportURL" DisplayName="Support URL" />
+            <pnp:FieldRef ID="831a8efd-9456-43fa-b584-1cbdd4292519" Name="AppVideoURL" DisplayName="Video URL" />
+            <pnp:FieldRef ID="0985248f-8044-4c6f-b535-eb3ac2773d44" Name="IsAppPackageEnabled" DisplayName="Enabled" />
+            <pnp:FieldRef ID="7cbaba9f-d082-4e55-96b9-62ca9a541769" Name="SharePointAppCategory" DisplayName="Category" />
+            <pnp:FieldRef ID="b9d82342-9580-4ba1-9742-174cfccbc77f" Name="IsFeaturedApp" DisplayName="Featured" />
+            <pnp:FieldRef ID="14c6cd06-7417-42c1-a051-89e455fd1090" Name="AppMetadataLocale" DisplayName="Metadata Language" />
+            <pnp:FieldRef ID="2e055cad-648e-4723-aa3a-917dd9e809b3" Name="IsDefaultAppMetadataLocale" DisplayName="Default Metadata Language" />
+            <pnp:FieldRef ID="e44b4501-af7d-4b30-a8a2-e70b59dae7bf" Name="AppImageURL1" DisplayName="Image URL 1" />
+            <pnp:FieldRef ID="047d5b20-5e82-4ea1-9841-f62c9656c41a" Name="AppImageURL2" DisplayName="Image URL 2" />
+            <pnp:FieldRef ID="873fd80b-3f9e-4ada-88f4-3ee3c15522ac" Name="AppImageURL3" DisplayName="Image URL 3" />
+            <pnp:FieldRef ID="307ecf23-25d5-4d1d-89f5-693eb977d6f5" Name="AppImageURL4" DisplayName="Image URL 4" />
+            <pnp:FieldRef ID="1fc17524-afa8-4e6f-ba64-a77dd42f310b" Name="AppImageURL5" DisplayName="Image URL 5" />
+            <pnp:FieldRef ID="01df698e-7495-428c-a04f-99c8eda6b3cd" Name="IsValidAppPackage" DisplayName="Valid app package" />
+            <pnp:FieldRef ID="80ac5bc8-73dc-4967-950f-3f6ec32c19f4" Name="AppPackageErrorMessage" DisplayName="App package error message" />
+            <pnp:FieldRef ID="de81f63e-c919-4f47-80fb-95ef0ef506f7" Name="AppSubtype" DisplayName="App Subtype" />
+            <pnp:FieldRef ID="2b6eea14-803b-47d2-959f-4947bf4e978c" Name="IsClientSideSolution" DisplayName="Client-side solution" />
+            <pnp:FieldRef ID="b2fb0f79-cb89-4a24-a048-561d4b3505f7" Name="IsClientSideSolutionDeployed" DisplayName="Deployed" />
+            <pnp:FieldRef ID="d1897cf8-37a7-486b-98b3-323672559684" Name="ExternalContentDomains" DisplayName="External Content Domains" />
+            <pnp:FieldRef ID="96ccf93b-0eb3-4a81-b579-5f1bad70dbcb" Name="IsClientSideSolutionCurrentVersionDeployed" DisplayName="Current Version Deployed" />
+            <pnp:FieldRef ID="eda244c9-5a10-4057-8b96-a118a3b31454" Name="SkipFeatureDeployment" DisplayName="Added to all sites" />
+            <pnp:FieldRef ID="a39bc357-357e-403a-8146-289f121b9040" Name="PackageDefaultSkipFeatureDeployment" DisplayName="Package Default Skip Feature Deployment" />
+            <pnp:FieldRef ID="68021728-c04c-45bb-b51f-7bcb5ab997b1" Name="IsolatedDomain" DisplayName="Isolated Domain" />
+            <pnp:FieldRef ID="84316157-4f2b-42c4-b353-b593b357de01" Name="ContainsTenantWideExtension" DisplayName="Contains tenant wide instances" />
+            <pnp:FieldRef ID="5d88909c-873a-4262-bc81-9b7c2ad04105" Name="WebApiPermissionScopesNote" DisplayName="Web Api Permission Scopes Requested" />
+            <pnp:FieldRef ID="3aa8efc0-1a31-42bc-9755-865f1a22a3f5" Name="StoreAssetId" DisplayName="Store ID" />
+            <pnp:FieldRef ID="4618bc96-56d1-49e1-8385-4e9be7b4d604" Name="ContainsTeamsManifest" DisplayName="Contains Teams Manifest" />
+            <pnp:FieldRef ID="bf222d9b-8e25-4b89-8611-43c96bb550d3" Name="ContainsVivaManifest" DisplayName="Contains Viva Manifest" />
+            <pnp:FieldRef ID="12592a6a-af80-430a-baea-657bdcec791d" Name="SupportsTeamsTabs" DisplayName="Supports Teams Tabs" />
+            <pnp:FieldRef ID="cc1abca4-3a7a-4191-a633-16146d2d4d09" Name="AvailableFor" DisplayName="Available for" />
+            <pnp:FieldRef ID="cce7fec4-b405-4794-be65-17f5164a66f1" Name="Source" DisplayName="App type" />
+            <pnp:FieldRef ID="cbf25806-37e7-4f90-873e-98c0a506f455" Name="State" DisplayName="State" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Documents" Description="" DocumentTemplate="{site}/Shared Documents/Forms/template.dotx" OnQuickLaunch="true" TemplateType="101" Url="Shared Documents" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" ListExperience="NewExperience" DefaultDisplayFormUrl="{site}/Shared Documents/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Shared Documents/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Shared Documents/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{A860EC69-6274-4D6B-829A-92E958645AC3}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Shared Documents/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Form Templates" Description="This library contains administrator-approved form templates that were activated to this site collection." DocumentTemplate="" TemplateType="101" Url="FormServerTemplates" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/FormServerTemplates/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/FormServerTemplates/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/FormServerTemplates/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010100F8EF98760CBA4A94994F13BA881038FA" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{7CC95642-7AF2-4E97-A2A4-84B580DA2E95}" MobileView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/FormServerTemplates/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{8FB799DF-B289-430E-8ACC-1E0DC792A53A}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Forms" Url="{site}/FormServerTemplates/Forms/All Forms.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="FormCategory" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="FormName" />
+                </OrderBy>
+                <Where>
+                  <Neq>
+                    <FieldRef Name="ShowInCatalog" />
+                    <Value Type="Boolean">0</Value>
+                  </Neq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="FormName" />
+                <FieldRef Name="FormDescription" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
+            <pnp:FieldRef ID="66b691cf-07a3-4ca6-ac6d-27fa969c8569" Name="FormName" DisplayName="Form Name" />
+            <pnp:FieldRef ID="65572d4d-445a-43f1-9c77-3358222a2c93" Name="FormCategory" DisplayName="Form Category" />
+            <pnp:FieldRef ID="94ad6f7c-09a1-42ca-974f-d24e080160c2" Name="FormVersion" DisplayName="Form Version" />
+            <pnp:FieldRef ID="1a03fa74-8c63-40cc-bd06-73b580bd8744" Name="FormId" DisplayName="Form ID" />
+            <pnp:FieldRef ID="96c27c9d-33f5-4f8e-893e-684014bc7090" Name="FormLocale" DisplayName="Form Locale" />
+            <pnp:FieldRef ID="1fff255c-6c88-4a76-957b-ae24bf07b78c" Name="FormDescription" DisplayName="Form Description" />
+            <pnp:FieldRef ID="4ef69ca4-4179-4d27-9e6c-f9544d45dfdc" Name="ShowInCatalog" DisplayName="Show in Catalog" />
+            <pnp:FieldRef ID="1a03fa74-8c63-40cc-bd06-73b580bd8743" Name="LinkTemplateName" DisplayName="Form Name" />
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Leave Requests" Description="Leave Requests" DocumentTemplate="" TemplateType="100" Url="Lists/LeaveRequests" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/LeaveRequests/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/LeaveRequests/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/LeaveRequests/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="=[Leave Start Date]&lt;[Leave End Date]" ValidationMessage="Leave Start date can not be after End date">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0100D2FD5D34C35E6B43912CF63992DC1686" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{6ACDC888-F84B-4F2C-B167-EEBE477F931E}" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/LeaveRequests/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="paStatus" />
+                <FieldRef Name="paStartDate" />
+                <FieldRef Name="paEndDate" />
+                <FieldRef Name="paManager" />
+                <FieldRef Name="paLeaveType" />
+                <FieldRef Name="paComments" />
+                <FieldRef Name="Author" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{988A942A-ACE6-48AF-8ECB-A0855B6CD040}" DefaultView="TRUE" Type="HTML" DisplayName="Leaves Calendar" Url="{site}/Lists/LeaveRequests/Leaves Calendar.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="paStartDate" />
+                    <FieldRef Name="paEndDate" />
+                    <Value Type="DateTime">
+                      <Month />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="paStartDate" />
+                <FieldRef Name="paEndDate" />
+                <FieldRef Name="Title" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">0</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewType2>MODERNCALENDAR</ViewType2>
+              <CalendarViewStyles>
+                <CalendarViewStyle Title="Day" Type="day" Template="CalendarViewdayChrome" Sequence="1" Default="FALSE" />
+                <CalendarViewStyle Title="Week" Type="week" Template="CalendarViewweekChrome" Sequence="2" Default="FALSE" />
+                <CalendarViewStyle Title="Month" Type="month" Template="CalendarViewmonthChrome" Sequence="3" Default="TRUE" />
+              </CalendarViewStyles>
+              <ViewData>
+                <FieldRef Name="Title" Type="CalendarMonthTitle" />
+                <FieldRef Name="Title" Type="CalendarWeekTitle" />
+                <FieldRef Name="Title" Type="CalendarWeekLocation" />
+                <FieldRef Name="Title" Type="CalendarDayTitle" />
+                <FieldRef Name="Title" Type="CalendarDayLocation" />
+              </ViewData>
+            </View>
+            <View Name="{72645362-B744-4D35-A4B7-4ECE3A4A2120}" Type="HTML" DisplayName="My Leaves" Url="{site}/Lists/LeaveRequests/My Leaves.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+                <Where>
+                  <And>
+                    <Eq>
+                      <FieldRef Name="Author" />
+                      <Value Type="Integer">
+                        <UserID Type="Integer" />
+                      </Value>
+                    </Eq>
+                    <Geq>
+                      <FieldRef Name="paEndDate" />
+                      <Value Type="DateTime">
+                        <Today />
+                      </Value>
+                    </Geq>
+                  </And>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="paStatus" />
+                <FieldRef Name="paStartDate" />
+                <FieldRef Name="paEndDate" />
+                <FieldRef Name="paManager" />
+                <FieldRef Name="paLeaveType" />
+                <FieldRef Name="paComments" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewData />
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Choice" DisplayName="Approval Status" Required="FALSE" Format="RadioButtons" FillInChoice="FALSE" Group="Leave" ID="{4e8972a0-fdfc-4dde-8e32-1abac7764582}" StaticName="paStatus" Name="paStatus" ShowInNewForm="FALSE" SourceID="{{siteid}}" Customization="" ColName="nvarchar5" RowOrdinal="0" CustomFormatter="{&quot;$schema&quot;:&quot;https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json&quot;,&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;customCardProps&quot;:{&quot;formatter&quot;:{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;txtContent&quot;:&quot;[$paComments]&quot;},&quot;openOnEvent&quot;:&quot;hover&quot;,&quot;directionalHint&quot;:&quot;bottomCenter&quot;,&quot;isBeakVisible&quot;:true,&quot;beakStyle&quot;:{&quot;backgroundColor&quot;:&quot;white&quot;}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Submit&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Cancel&quot;]},&quot;sp-css-backgroundColor-BgMintGreen&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Approved&quot;]},&quot;sp-css-backgroundColor-BgGreen sp-css-borderColor-WhiteFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Awaiting Approval&quot;]},&quot;sp-css-backgroundColor-BgGold sp-css-borderColor-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Cancelled&quot;]},&quot;sp-css-backgroundColor-BgCyan&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Declined&quot;]},&quot;sp-css-backgroundColor-BgRed sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-WhiteFont&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}]}]}]}]}},&quot;children&quot;:[{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;line-height&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;14px&quot;},&quot;attributes&quot;:{&quot;iconName&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Submit&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Cancel&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Approved&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Awaiting Approval&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Cancelled&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Declined&quot;]},&quot;&quot;,&quot;&quot;]}]}]}]}]}]}]},&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Submit&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Cancel&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Approved&quot;]},&quot;sp-css-color-WhiteFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Awaiting Approval&quot;]},&quot;sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Cancelled&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Declined&quot;]},&quot;sp-css-color-WhiteFont&quot;,&quot;&quot;]}]}]}]}]}]}]}}},{&quot;elmType&quot;:&quot;span&quot;,&quot;style&quot;:{&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;padding&quot;:&quot;0 3px&quot;},&quot;txtContent&quot;:&quot;[$paStatus]&quot;,&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Submit&quot;]},&quot;sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Cancel&quot;]},&quot;sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;&quot;]},&quot;&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Approved&quot;]},&quot;sp-css-color-WhiteFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Awaiting Approval&quot;]},&quot;sp-css-color-GoldFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Cancelled&quot;]},&quot;sp-css-color-CyanFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$paStatus]&quot;,&quot;Declined&quot;]},&quot;sp-css-color-WhiteFont&quot;,&quot;&quot;]}]}]}]}]}]}]}}}]}]}" Version="2">
+              <Default>Submit</Default>
+              <CHOICES>
+                <CHOICE>Submit</CHOICE>
+                <CHOICE>Cancel</CHOICE>
+              </CHOICES>
+            </Field>
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="431168b0-4e2c-4cd1-8bd3-6e0948ae4177" Name="paMessage" DisplayName="Message" />
+            <pnp:FieldRef ID="324ae220-59e7-4766-aea1-2fc47df5e9c2" Name="paLeaveType" DisplayName="Leave Type" />
+            <pnp:FieldRef ID="eef1963a-e225-4417-9906-3aa4a6f2e3f2" Name="paStartDate" DisplayName="Leave Start Date" />
+            <pnp:FieldRef ID="d36ee13b-2365-435a-b00d-e18909311f71" Name="paEndDate" DisplayName="Leave End Date" />
+            <pnp:FieldRef ID="5898f624-d771-46ee-8923-36c229cae6e5" Name="paManager" DisplayName="Manager" />
+            <pnp:FieldRef ID="7442eb99-9339-418c-919f-ccb6b9cc2c8a" Name="paComments" DisplayName="Approvers Comments" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://southeastasia0.pushnp.svc.ms/notifications?token=d44fe997-b37a-4824-9c10-90b3dd35a75d" ExpiresInDays="1" />
+            <pnp:Webhook ServerNotificationUrl="https://asia-001.azure-apim.net/apim/sharepointonline/ontableupdatedhook?r=https%253a%252f%252fprod-27.southeastasia.logic.azure.com%252fworkflows%252f206891ab2e4c4c15bc1b7d8df77ccfaf%252ftriggers%252fWhen_an_item_is_created_or_modified%252fpaths%252finvoke%253fapi-version%253d2016-06-01%2526sp%253d%25252Ftriggers%25252FWhen_an_item_is_created_or_modified%25252Frun%25252C%25252Ftriggers%25252FWhen_an_item_is_created_or_modified%25252Fread%2526sv%253d1.0%2526sig%253dZUdFYZCHKRGz-tfywadgblReC3X2mTFjYRMxuPQZ818" ExpiresInDays="3" />
+            <pnp:Webhook ServerNotificationUrl="https://asia-001.azure-apim.net/apim/sharepointonline/ontableupdatedhook?r=https%253a%252f%252fprod-17.southeastasia.logic.azure.com%252fworkflows%252f6a442fb0008a46538f5a6906f4c696a7%252ftriggers%252fWhen_an_item_is_created_or_modified%252fpaths%252finvoke%253fapi-version%253d2016-06-01%2526sp%253d%25252Ftriggers%25252FWhen_an_item_is_created_or_modified%25252Frun%25252C%25252Ftriggers%25252FWhen_an_item_is_created_or_modified%25252Fread%2526sv%253d1.0%2526sig%253duRkOT-VyVDQvm16tGkM70T2RdRF7dEP9eLO46rl7iRA" ExpiresInDays="3" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="1" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{D1DA2AEA-58C5-4D81-BA61-D8E2A56F796B}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/SiteAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Pages" Description="" DocumentTemplate="" TemplateType="119" Url="SitePages" EnableVersioning="true" EnableMinorVersions="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/SitePages/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SitePages/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SitePages/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x010108" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x01010901" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{E59877E9-9D10-414C-B6CE-E626C55742DC}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="By Author" Url="{site}/SitePages/Forms/ByAuthor.aspx" Level="1" BaseViewID="4" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Author" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Modified" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{EC84724B-B646-4568-9C43-BAF60A4784E5}" Type="HTML" DisplayName="Recent Changes" Url="{site}/SitePages/Forms/RecentChanges.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{88887EFE-8EE0-4675-B1FD-A9C67C102F81}" Type="HTML" DisplayName="By Editor" Url="{site}/SitePages/Forms/ByEditor.aspx" Level="1" BaseViewID="5" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Editor" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{B558E8A4-B33D-4FD7-B58A-ED4F29A0C422}" Type="HTML" DisplayName="Created By Me" Url="{site}/SitePages/Forms/CreatedByMe.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Author" />
+                    <Value Type="Integer">
+                      <UserID />
+                    </Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{94C19210-A891-464B-A66D-81C55E483F97}" Type="HTML" DisplayName="All Pages" Url="{site}/SitePages/Forms/AllPages.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c33527b4-d920-4587-b791-45024d00068a" Name="WikiField" DisplayName="Wiki Content" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" DisplayName="Authoring Canvas Content" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" DisplayName="Banner Image URL" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" DisplayName="Promoted State" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" DisplayName="First Published Date" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" DisplayName="Page Layout Content" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" DisplayName="Author Byline" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" DisplayName="Topic header" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" DisplayName="Site Page Flags" />
+            <pnp:FieldRef ID="9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2" Name="_SPCallToAction" DisplayName="Call To Action" />
+            <pnp:FieldRef ID="0e7b982f-698a-4d0c-aacb-f16906f66d30" Name="_OriginalSourceUrl" DisplayName="Original Source Url" />
+            <pnp:FieldRef ID="36193413-dd5c-4096-8c1e-1b40098b9ba3" Name="_OriginalSourceSiteId" DisplayName="Original Source Site ID" />
+            <pnp:FieldRef ID="3477a5bc-c605-4b2e-a7c1-8db8f13c017e" Name="_OriginalSourceWebId" DisplayName="Original Source Web ID" />
+            <pnp:FieldRef ID="139da674-dbf6-439f-98e0-4eb05fa9a669" Name="_OriginalSourceListId" DisplayName="Original Source List ID" />
+            <pnp:FieldRef ID="91e86a43-75f2-426f-80da-35edfb47d55d" Name="_OriginalSourceItemId" DisplayName="Original Source Item ID" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Style Library" Description="Use the style library to store style sheets, such as CSS or XSL files. The style sheets in this gallery can be used by this site or any of its subsites." DocumentTemplate="" TemplateType="101" Url="Style Library" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/Style Library/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/Style Library/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/Style Library/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{335C9335-8CC6-4932-AF04-D8EEAC5C5E59}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/Style Library/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Features>
+        <pnp:SiteFeatures>
+          <pnp:Feature ID="88dc6e04-3256-401b-9851-8e07674bb0d6" />
+        </pnp:SiteFeatures>
+        <pnp:WebFeatures>
+          <pnp:Feature ID="780ac353-eaf8-4ac2-8c47-536d93c03fd6" />
+          <pnp:Feature ID="63d56131-2856-4351-b1fb-a4861449c2ad" />
+        </pnp:WebFeatures>
+      </pnp:Features>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="" PageName="Home.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Button" JsonControlData="{&quot;id&quot;: &quot;0f087d7f-520e-42b7-89c0-496aaf979d58&quot;, &quot;instanceId&quot;: &quot;5184ae15-9028-464d-bdf9-871dc8722e3e&quot;, &quot;title&quot;: &quot;Button&quot;, &quot;description&quot;: &quot;Add a clickable button with a custom label and link.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;alignment&quot;:&quot;Center&quot;}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;label&quot;:&quot;Raise leave request&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;linkUrl&quot;:&quot;{site}/Lists/LeaveRequests/NewForm.aspx?Source=https%3a//{fqdn}{site}&quot;}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {}}" ControlId="0f087d7f-520e-42b7-89c0-496aaf979d58" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn" BackgroundEmphasis="Neutral">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;527d719a-f05d-4487-a667-6291ffa114e3&quot;, &quot;title&quot;: &quot;List&quot;, &quot;description&quot;: &quot;Display a list from this site.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:false,&quot;selectedListId&quot;:&quot;{listid:Leave Requests}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Lists/LeaveRequests&quot;,&quot;webRelativeListUrl&quot;:&quot;/Lists/LeaveRequests&quot;,&quot;webpartHeightKey&quot;:4,&quot;selectedViewId&quot;:&quot;{viewid:Leave Requests,Leaves Calendar}&quot;,&quot;hideCommandBar&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Leaves Calendar&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;381d80a3-3a7e-40b7-b80d-7155d273298c&quot;, &quot;title&quot;: &quot;List&quot;, &quot;description&quot;: &quot;Display a list from this site.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:false,&quot;selectedListId&quot;:&quot;{listid:Leave Requests}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Lists/LeaveRequests&quot;,&quot;webRelativeListUrl&quot;:&quot;/Lists/LeaveRequests&quot;,&quot;webpartHeightKey&quot;:4,&quot;selectedViewId&quot;:&quot;{viewid:Leave Requests,My Leaves}&quot;,&quot;hideCommandBar&quot;:true,&quot;hideSeeAllButton&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;My Leaves&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="2" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn" BackgroundEmphasis="Neutral">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="List" JsonControlData="{&quot;id&quot;: &quot;f92bf067-bc19-489e-a556-7fe95f508720&quot;, &quot;instanceId&quot;: &quot;758d958a-ac45-40b9-9782-ceb4b552e404&quot;, &quot;title&quot;: &quot;List&quot;, &quot;description&quot;: &quot;Display a list from this site.&quot;, &quot;dataVersion&quot;: &quot;1.0&quot;, &quot;properties&quot;: {&quot;isDocumentLibrary&quot;:false,&quot;selectedListId&quot;:&quot;{listid:Approval History}&quot;,&quot;selectedListUrl&quot;:&quot;{site}/Lists/ApprovalHistory&quot;,&quot;webRelativeListUrl&quot;:&quot;/Lists/ApprovalHistory&quot;,&quot;webpartHeightKey&quot;:1,&quot;selectedViewId&quot;:&quot;{viewid:Approval History,Awaiting My Approval}&quot;,&quot;hideCommandBar&quot;:true,&quot;hideSeeAllButton&quot;:true}, &quot;serverProcessedContent&quot;: {&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;listTitle&quot;:&quot;Approvals awaiting my action&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}}, &quot;dynamicDataPaths&quot;: {}, &quot;dynamicDataValues&quot;: {&quot;filterBy&quot;:{}}}" ControlId="f92bf067-bc19-489e-a556-7fe95f508720" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Compact" ShowSiteTitle="false" ShowSiteNavigation="false" />
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
